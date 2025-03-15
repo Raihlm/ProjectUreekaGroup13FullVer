@@ -60,10 +60,9 @@ export const Login = () => {
       return;
     }
 
-    // Simulasi login sukses (di dunia nyata, ini diganti dengan autentikasi backend)
     localStorage.setItem("user", JSON.stringify({ email }));
     
-    navigate("/pengukuran"); // Langsung pindah ke halaman Pengukuran
+    navigate("/pengukuran");
   };
 
   return (
@@ -75,7 +74,7 @@ export const Login = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        background: "linear-gradient(to right, #ff758c, #ff7eb3)", // Sama dengan Signup
+        background: "linear-gradient(to right, #ff758c, #ff7eb3)", 
       }}
     >
       <h1>Let's Get Started!</h1>
